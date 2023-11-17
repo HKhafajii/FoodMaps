@@ -7,7 +7,7 @@
 
 import SwiftUI
 import MapKit
-
+//This is the main view
 
 struct LocationView: View {
     
