@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		622C5C0A2B084BD9002F8693 /* LocationPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622C5C092B084BD9002F8693 /* LocationPreviewView.swift */; };
+		622C5C0C2B08F6A6002F8693 /* LocationMapAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622C5C0B2B08F6A6002F8693 /* LocationMapAnnotationView.swift */; };
+		622C5C0E2B08FDF1002F8693 /* LocationsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622C5C0D2B08FDF1002F8693 /* LocationsDetailView.swift */; };
 		627D31762B05837300806BD9 /* LocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627D31752B05837300806BD9 /* LocationView.swift */; };
 		627D31782B05878600806BD9 /* LocationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627D31772B05878600806BD9 /* LocationsViewModel.swift */; };
 		627D317A2B06F1E600806BD9 /* locationsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627D31792B06F1E600806BD9 /* locationsListView.swift */; };
@@ -39,6 +42,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		622C5C092B084BD9002F8693 /* LocationPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPreviewView.swift; sourceTree = "<group>"; };
+		622C5C0B2B08F6A6002F8693 /* LocationMapAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationMapAnnotationView.swift; sourceTree = "<group>"; };
+		622C5C0D2B08FDF1002F8693 /* LocationsDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsDetailView.swift; sourceTree = "<group>"; };
 		627D31752B05837300806BD9 /* LocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationView.swift; sourceTree = "<group>"; };
 		627D31772B05878600806BD9 /* LocationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsViewModel.swift; sourceTree = "<group>"; };
 		627D31792B06F1E600806BD9 /* locationsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = locationsListView.swift; sourceTree = "<group>"; };
@@ -156,6 +162,9 @@
 				62B169702AFF9F220090C547 /* ContentView.swift */,
 				627D31752B05837300806BD9 /* LocationView.swift */,
 				627D31792B06F1E600806BD9 /* locationsListView.swift */,
+				622C5C092B084BD9002F8693 /* LocationPreviewView.swift */,
+				622C5C0B2B08F6A6002F8693 /* LocationMapAnnotationView.swift */,
+				622C5C0D2B08FDF1002F8693 /* LocationsDetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -307,7 +316,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				62B169A22AFFA28D0090C547 /* LocationsDataService.swift in Sources */,
+				622C5C0C2B08F6A6002F8693 /* LocationMapAnnotationView.swift in Sources */,
+				622C5C0E2B08FDF1002F8693 /* LocationsDetailView.swift in Sources */,
 				627D31782B05878600806BD9 /* LocationsViewModel.swift in Sources */,
+				622C5C0A2B084BD9002F8693 /* LocationPreviewView.swift in Sources */,
 				62B169712AFF9F220090C547 /* ContentView.swift in Sources */,
 				627D31762B05837300806BD9 /* LocationView.swift in Sources */,
 				62B1699F2AFFA16A0090C547 /* Location.swift in Sources */,
@@ -480,12 +492,14 @@
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
@@ -518,12 +532,14 @@
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
